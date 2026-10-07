@@ -1,37 +1,62 @@
 # Taotern — Knowledge in context
 
-A document workspace for storing original sources, organizing Projects, asking source-grounded questions and reviewing evidence-linked analysis.
+**Turn scattered documents into organized projects and source-cited answers, with original evidence within reach.**
 
-**Current delivery: GPT-Site.** Local Docker work is paused. OCR is paused; use native-text PDF, TXT and Markdown for the current demonstration.
+## Team
 
-## Open the product
+**Taotern**
+- Daniel Ong Zhi En
+- You Zheng
+
+Built for AWS Community Day Kuching 2026.
+
+## Demo
 
 https://taotern-kuching-2026.liuyz8715.chatgpt.site/
 
-Sign in with your ChatGPT account. Each account has its own workspace. Use only public or synthetic content with the configured demonstration AI providers; requests remain quota-limited.
+Sign in with a ChatGPT account. Each account has an isolated workspace. Use public or synthetic documents with the demonstration AI provider; model calls are quota-limited.
 
-## What is verified
+## What it does and who it is for
 
-- Fresh native-text upload, original-source retention and page-linked text readback
-- Existing Projects, three native PDFs and saved analysis records survive the restore
-- Selecting a PDF opens its actual original pages centrally, preserving layout; extracted text is secondary
-- A previous single-document grounded answer and its source references were verified
+Taotern helps students, researchers and teams turn scattered documents into a focused evidence workspace. Upload original files, organize them into Projects, and consult an LLM about selected sources. Page-linked references lead back to the original document so users can check the answer.
 
-Multi-document citation reliability is being repaired and re-tested. Generated analysis is not automatically correct: inspect its references. OCR and local backend integration are not claimed complete.
+The final demonstration focuses on **Upload → Projects → Workspace consultation**.
+
+- Preserve original documents and display real PDF pages in a central reader
+- Extract native text from searchable PDF, TXT and Markdown for search and AI
+- Keep uploads even when text extraction is **NOT SUPPORTED**; use external OCR to make scanned material searchable
+- Clearly mark partial text coverage; unreadable pages are not silently treated as evidence
+- Organize documents into Projects and choose the evidence scope for each question
+- Return source-cited answers and open the cited original page
+
+OCR is not built into this release. Additional analysis tools are experimental and are not part of the narrowed final acceptance claim.
+
+## Quick demo flow
+
+1. Create a Project.
+2. Upload a native-text PDF or TXT/Markdown and assign it to that Project.
+3. Open the document: inspect its original pages, pagination and zoom.
+4. Open the Project Workspace, select ready sources and ask a question.
+5. Click the answer's source references and compare them with the original pages.
+
+Synthetic demo examples compare two circular versions: proposed launch12→19November2026, planning ceilingRM240,000→RM210,000 and service counters3→2; neither version grants procurement approval. These are explicitly fictional fixtures, not real organizational records.
 
 ## Actual product screenshot
 
-![Actual deployed Taotern original-PDF reader](taotern-pdf-reader.png)
+![Taotern displaying an original PDF centrally](taotern-pdf-reader.png)
 
-The screenshot is from the deployed product with clearly labeled synthetic QA material, not a mockup.
+This is an actual deployed product capture with labeled synthetic documents, not a mockup. Later compact-header and typography changes may differ slightly from this captured view.
 
-## Source checkpoint
+## Source and architecture
 
-Current deployed source: `9092867e48d23961c83c7a0ae2c4ab6a74985cf4`.
+The authoritative handoff is **taotern-source.zip**. Extract it to a clean directory; do not mix it with the older native app tree or paused Docker checkpoint. The archive contains source, dependency lockfile, migrations, tests and provenance documentation, without API keys or user documents.
 
-Authoritative source archive: `taotern-cloud-restore-9092867e48d2.zip`.
-SHA256: `37e1230e1b9a11580d7d73edb91cb145415165f64371c7cb51ccbbb0451c422a`.
+React/TypeScript UI, server-side document and AI routes, persistent document metadata and original-file storage. Credentials are server Secrets, never browser source or repository files. The demonstration runs on GPT-Site; the earlier local Docker direction is paused.
 
-The native `app/` tree is being synchronized; do not mix files from earlier checkpoints. The earlier Docker source release and launcher are paused and retained in Git history for recovery, not the current demonstration route.
+Inside the extracted source, install dependencies with `npm ci`, then run `npm run build`. Deployment requires the documented runtime/storage bindings and server-side provider configuration; secrets are not included.
 
-Participants: Daniel Ong Zhi En, You Zheng
+## Verification and limitations
+
+Actual checks include fresh native-text upload/readback, Project-scoped saved sources, original-PDF reader/page/zoom/citation navigation, persistence across deployment, and a successful three-document comparison with exact source references. The final native-only upload/partial-page rules also have parser and HTTP regression coverage. New provider switching is validated separately; a configured key alone is not proof of a working API call.
+
+See `docs/ACCEPTANCE.md` and `RECOVERY.md` in the source package for detailed evidence and explicit limits. AI answers can still be incomplete or mistaken; verify cited sources.
