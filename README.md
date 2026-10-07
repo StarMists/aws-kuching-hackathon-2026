@@ -1,13 +1,37 @@
-# Taotern source release
+# Taotern — Knowledge in context
 
-This ZIP is the authoritative LATEST SOURCE handoff, with a clean package.json/package-lock.json and Windows/Docker installer. It deliberately contains no stale dist. The older native repository tree is historical; do not mix versions.
+A document workspace for storing original sources, organizing Projects, asking source-grounded questions and reviewing evidence-linked analysis.
 
-1. Keep the existing Docker-Deployment/Supabase/OCR/WeKnora/model-proxy stack running.
-2. Run the root Start.ps1. It verifies the SHA256, extracts into an isolated directory and asks for the existing checkout/project/network. Docker builds ONLY the new Taotern GUI/adapter from the lockfile; original services and volumes are not rebuilt or migrated.
-3. Open http://127.0.0.1:8788. Check.ps1 runs redacted verification without model calls; use -LiveAI explicitly for actual model/OCR/retrieval acceptance. Missing original owner UUID/WeKnora tenant/KB configuration remains an explicit blocker/NOTRUN.
+**Current delivery: GPT-Site.** Local Docker work is paused. OCR is paused; use native-text PDF, TXT and Markdown for the current demonstration.
 
-The teammate needs Docker Compose/build access and registry connectivity. No host Node installation is required. No model is downloaded or launched, and no global ExecutionPolicy/security change or destructive down -v/reset is requested. Existing backend env files stay on the teammate's computer; optional values belong in untracked local.env. Never upload secrets to GitHub or reports.
+## Open the product
 
-The GUI is Taotern with original-PDF page/zoom/fit reader. Existing model proxy, original Supabase queue/Python OCR engine and WeKnora index/search are accessed through bounded adapters. Chat/analysis currently select frozen native evidence; that is not claimed to be the original WeKnora chat engine. Configuration or cloud tests do not certify the teammate's host. Follow docs/LOCAL-VERIFICATION.md and retain PASS/FAIL/NOTRUN receipts.
+https://taotern-kuching-2026.liuyz8715.chatgpt.site/
+
+Sign in with your ChatGPT account. Each account has its own workspace. Use only public or synthetic content with the configured demonstration AI providers; requests remain quota-limited.
+
+## What is verified
+
+- Fresh native-text upload, original-source retention and page-linked text readback
+- Existing Projects, three native PDFs and saved analysis records survive the restore
+- Selecting a PDF opens its actual original pages centrally, preserving layout; extracted text is secondary
+- A previous single-document grounded answer and its source references were verified
+
+Multi-document citation reliability is being repaired and re-tested. Generated analysis is not automatically correct: inspect its references. OCR and local backend integration are not claimed complete.
+
+## Actual product screenshot
+
+![Actual deployed Taotern original-PDF reader](taotern-pdf-reader.png)
+
+The screenshot is from the deployed product with clearly labeled synthetic QA material, not a mockup.
+
+## Source checkpoint
+
+Current deployed source: `9092867e48d23961c83c7a0ae2c4ab6a74985cf4`.
+
+Authoritative source archive: `taotern-cloud-restore-9092867e48d2.zip`.
+SHA256: `37e1230e1b9a11580d7d73edb91cb145415165f64371c7cb51ccbbb0451c422a`.
+
+The native `app/` tree is being synchronized; do not mix files from earlier checkpoints. The earlier Docker source release and launcher are paused and retained in Git history for recovery, not the current demonstration route.
 
 Participants: Daniel Ong Zhi En, You Zheng
