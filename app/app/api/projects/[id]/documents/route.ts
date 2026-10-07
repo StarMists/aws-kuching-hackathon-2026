@@ -1,0 +1,8 @@
+import { requireOwner,assertSameOrigin } from '@/lib/auth';
+import { db,ownedProject,ownedDocument,now } from '@/lib/db';
+import { ApiError,apiData,apiError,readJson } from '@/lib/http';
+export const dynamic='force-dynamic';
+type Context={params:Promise<{id:string}>};
+async function input(request:Request,context:Context){assertSameOrigin(request);const owner=await requireOwner(request);const {id}=await context.params;await ownedProject(owner,id);const body=await readJson(request);if(!Array.isArray(body.document_ids)||body.document_ids.some(x=>typeof x!=='string')||body.document_ids.length>100)throw new ApiError(400,'INVALID_INPUT','Send up to 100 document IDs.');const ids=[...new Set(body.document_ids as string[])];await Promise.all(ids.map(doc=>ownedDocument(owner,doc)));return {owner,id,ids};}
+export async function POST(request:Request,context:Context){try{const {owner,id,ids}=await input(request,context);const stamp=now();if(ids.length)await db().batch([...ids.map(doc=>db().prepare('INSERT OR IGNORE INTO project_documents(project_id,document_id,added_at) VALUES(?,?,?)').bind(id,doc,stamp)),db().prepare('UPDATE projects SET updated_at=? WHERE id=? AND owner_id=?').bind(stamp,id,owner)]);return apiData({project_id:id,document_ids:ids,added:ids.length})}catch(e){return apiError(e)}}
+export async function DELETE(request:Request,context:Context){try{const {owner,id,ids}=await input(request,context);if(ids.length)await db().batch([...ids.map(doc=>db().prepare('DELETE FROM project_documents WHERE project_id=? AND document_id=?').bind(id,doc)),db().prepare('UPDATE projects SET updated_at=? WHERE id=? AND owner_id=?').bind(now(),id,owner)]);return apiData({project_id:id,document_ids:ids,detached:ids.length})}catch(e){return apiError(e)}}
