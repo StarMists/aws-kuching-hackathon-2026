@@ -1,0 +1,15 @@
+SYNTHETIC QA FIXTURE - FICTIONAL AGENCY AND PEOPLE - NOT AN OFFICIAL RECORD
+Fictional Serai Civic Development Office
+Meeting M-2026-10-02, held 02 October 2026, 09:30-10:15.
+Attendees named in this synthetic record: Mira Tan, Arif Lim, Jo Chan. No total attendance count is recorded.
+Proposal: use Circular CVD-26-17 version 1 as the working launch plan.
+Decision D-02: retain the proposed 12 November 2026 launch and three-counter arrangement for planning only. No procurement commitment was approved.
+Reason: the team wanted a working date for the readiness review.
+
+SYNTHETIC QA FIXTURE - FICTIONAL AGENCY AND PEOPLE - NOT AN OFFICIAL RECORD
+Dissent, actions, and unresolved points
+Jo Chan dissented from retaining 12 November because an accessible ramp test was not scheduled.
+Action A-17: Mira Tan to submit an accessibility walkthrough report by 30 October 2026. Status: unresolved.
+Action A-18: Arif Lim to obtain a procurement clearance reference by 28 October 2026. Status: unresolved.
+The minute-taker did not record the final supplier, formal procurement approval, or a signed ramp assessment.
+A follow-up review is planned for 30 October 2026.

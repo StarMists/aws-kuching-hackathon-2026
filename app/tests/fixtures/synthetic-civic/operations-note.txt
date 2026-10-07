@@ -1,0 +1,8 @@
+SYNTHETIC QA FIXTURE - FICTIONAL AGENCY AND PEOPLE - NOT AN OFFICIAL RECORD
+Fictional Serai Transit Unit
+Operational Readiness Note O-11, issued 06 October 2026 by Arif Lim.
+The note schedules a staff rehearsal for 17 November 2026 at 14:00. The public launch is listed as 12 November 2026 and the layout lists three counters.
+These launch/layout values conflict with revised Circular CVD-26-17 version 2, dated 05 October 2026, which proposes 19 November and two counters. This note gives no explanation for retaining the older values.
+The note states: ramp access is operationally ready. No signed accessibility assessment is attached.
+Human review is required before treating this readiness statement as formal accessibility clearance.
+There is no procurement clearance reference in this note.

@@ -1,0 +1,23 @@
+SYNTHETIC QA FIXTURE - FICTIONAL AGENCY AND PEOPLE - NOT AN OFFICIAL RECORD
+Fictional Serai Civic Development Office
+Circular CVD-26-17, version 2. Issued 05 October 2026.
+Subject: revision of Serai Civic Access Pilot, identifier SERAI-47.
+This revision supersedes version 1 for the planning date, ceiling, and service-counter count. The revised proposed public launch is 19 November 2026. The revised planning ceiling is RM 210,000. Two service counters are proposed. Taman Serai North remains the intended pilot area.
+Mira Tan remains the programme lead. Arif Lim remains operations coordinator.
+The revised plan is still conditional. This circular is not procurement approval.
+
+SYNTHETIC QA FIXTURE - FICTIONAL AGENCY AND PEOPLE - NOT AN OFFICIAL RECORD
+Reason for revision and impact
+The launch is moved by seven days because the accessible-ramp inspection cannot occur until 03 November 2026. The ceiling is lowered by RM 30,000 and one proposed counter is removed.
+The 02 October meeting decision D-02 should be revisited because its working date and counter count were based on version 1.
+Action A-17 remains unresolved: Mira Tan must submit the accessibility walkthrough report by 30 October 2026. This due date precedes the new inspection date and requires human clarification.
+Action A-18 remains unresolved. No procurement clearance reference is attached.
+
+SYNTHETIC QA FIXTURE - FICTIONAL AGENCY AND PEOPLE - NOT AN OFFICIAL RECORD
+Revision log and scope
+Old planning launch: 12 November 2026. New planning launch: 19 November 2026.
+Old ceiling: RM 240,000. New ceiling: RM 210,000.
+Old counter count: three. New counter count: two.
+Unchanged: programme lead, operations coordinator, intended pilot area.
+Unique revision keyword: SERAI-47-EMBER-SPOON.
+No source in this revised circular states the number of residents served or a measured waiting-time reduction.

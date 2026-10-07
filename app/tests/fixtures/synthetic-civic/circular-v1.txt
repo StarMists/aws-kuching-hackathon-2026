@@ -1,0 +1,22 @@
+SYNTHETIC QA FIXTURE - FICTIONAL AGENCY AND PEOPLE - NOT AN OFFICIAL RECORD
+Fictional Serai Civic Development Office
+Circular CVD-26-17, version 1. Issued 14 September 2026.
+Subject: Serai Civic Access Pilot, identifier SERAI-47.
+The proposed public launch is 12 November 2026. The planning ceiling is RM 240,000. Three service counters are proposed. The intended pilot area is Taman Serai North.
+Mira Tan is the programme lead. Arif Lim coordinates operations. The participating partner is the fictional Serai Transit Unit.
+This circular is a proposal and does not constitute procurement approval.
+
+SYNTHETIC QA FIXTURE - FICTIONAL AGENCY AND PEOPLE - NOT AN OFFICIAL RECORD
+Rationale and dependencies
+The proposal seeks to shorten the first-visit intake process for residents. Queue counts were not supplied, so no measured time-saving claim is established.
+The proposed launch depends on an accessibility walkthrough and procurement clearance. The procurement clearance reference is not recorded.
+Mira Tan must obtain the accessibility sign-off. No completion date for that sign-off is recorded in this version.
+The unique filing keyword is SERAI-47-PLUM-KITE.
+
+SYNTHETIC QA FIXTURE - FICTIONAL AGENCY AND PEOPLE - NOT AN OFFICIAL RECORD
+Proposed delivery sequence
+14 September 2026: proposal issued.
+02 October 2026: steering meeting planned.
+30 October 2026: operational readiness review planned.
+12 November 2026: proposed public launch.
+No contractor name, signed procurement approval, or attendance count is included.

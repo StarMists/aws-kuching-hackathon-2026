@@ -1,0 +1,288 @@
+{
+  "synthetic": true,
+  "rights": "Original fixtures written for this project. Fictional people, agencies, documents, decisions and figures. No official government or company records.",
+  "upload_files": [
+    "circular-v1.pdf",
+    "meeting-minutes.pdf",
+    "circular-v2.pdf",
+    "operations-note.pdf",
+    "field-slip-photo.jpg",
+    "field-slip-scanned.pdf"
+  ],
+  "documents": [
+    {
+      "id": "circular-v1",
+      "title": "Serai Civic Access Pilot - Circular CVD-26-17",
+      "type": "circular",
+      "date": "2026-09-14",
+      "version": "1",
+      "family": "SERAI-ACCESS-2026",
+      "previous": null,
+      "page_count": 3
+    },
+    {
+      "id": "meeting-minutes",
+      "title": "Serai Pilot Steering Meeting Minutes M-2026-10-02",
+      "type": "meeting minutes",
+      "date": "2026-10-02",
+      "version": "1",
+      "family": "SERAI-MINUTES-20261002",
+      "previous": null,
+      "page_count": 2
+    },
+    {
+      "id": "circular-v2",
+      "title": "Serai Civic Access Pilot - Revised Circular CVD-26-17",
+      "type": "circular",
+      "date": "2026-10-05",
+      "version": "2",
+      "family": "SERAI-ACCESS-2026",
+      "previous": "circular-v1",
+      "page_count": 3
+    },
+    {
+      "id": "operations-note",
+      "title": "Serai Transit Operational Readiness Note O-11",
+      "type": "operational note",
+      "date": "2026-10-06",
+      "version": "1",
+      "family": "SERAI-OPS-11",
+      "previous": null,
+      "page_count": 1
+    }
+  ],
+  "facts": [
+    {
+      "key": "initial_launch",
+      "value": "2026-11-12",
+      "source": "circular-v1",
+      "page": 1
+    },
+    {
+      "key": "revised_launch",
+      "value": "2026-11-19",
+      "source": "circular-v2",
+      "page": 1
+    },
+    {
+      "key": "initial_ceiling",
+      "value": 240000,
+      "currency": "MYR",
+      "source": "circular-v1",
+      "page": 1
+    },
+    {
+      "key": "revised_ceiling",
+      "value": 210000,
+      "currency": "MYR",
+      "source": "circular-v2",
+      "page": 1
+    },
+    {
+      "key": "revised_counters",
+      "value": 2,
+      "source": "circular-v2",
+      "page": 1
+    },
+    {
+      "key": "dissent",
+      "value": "Jo Chan objected because an accessible ramp test was not scheduled.",
+      "source": "meeting-minutes",
+      "page": 2
+    },
+    {
+      "key": "action_A17",
+      "value": "Mira Tan must submit accessibility walkthrough report by 2026-10-30; unresolved.",
+      "source": "circular-v2",
+      "page": 2
+    },
+    {
+      "key": "rehearsal",
+      "value": "2026-11-17T14:00:00",
+      "source": "operations-note",
+      "page": 1
+    },
+    {
+      "key": "ramp_width",
+      "value": "112 cm",
+      "source": "field-slip-photo.jpg",
+      "page": 1
+    },
+    {
+      "key": "photo_nonce",
+      "value": "SERAI-47-LANTERN-PEAR",
+      "source": "field-slip-photo.jpg",
+      "page": 1
+    }
+  ],
+  "contradictions": [
+    {
+      "field": "public launch",
+      "old": "12 November 2026",
+      "new": "19 November 2026",
+      "sources": [
+        "circular-v1:p1",
+        "meeting-minutes:p1",
+        "circular-v2:p1",
+        "operations-note:p1"
+      ],
+      "interpretation": "Version 2 supersedes circular version 1. Operations note retains older values without explanation; human review required."
+    },
+    {
+      "field": "counter count",
+      "old": "three",
+      "new": "two",
+      "sources": [
+        "circular-v1:p1",
+        "meeting-minutes:p1",
+        "circular-v2:p1",
+        "operations-note:p1"
+      ]
+    },
+    {
+      "field": "accessibility",
+      "sources": [
+        "circular-v2:p2",
+        "operations-note:p1",
+        "field-slip-photo.jpg:p1"
+      ],
+      "interpretation": "Operationally-ready statement is not signed clearance. Field slip says NOT signed off."
+    }
+  ],
+  "gaps": [
+    "Final contractor/supplier identity",
+    "Procurement clearance reference",
+    "Signed ramp assessment",
+    "Measured waiting-time reduction",
+    "Number of residents served",
+    "Total meeting attendance"
+  ],
+  "timeline": [
+    {
+      "date": "2026-09-14",
+      "event": "Initial circular issued",
+      "source": "circular-v1:p1"
+    },
+    {
+      "date": "2026-10-02",
+      "event": "Planning decision D-02 and dissent",
+      "source": "meeting-minutes:p1-2"
+    },
+    {
+      "date": "2026-10-05",
+      "event": "Revision moves planning launch and changes ceiling/counters",
+      "source": "circular-v2:p1-3"
+    },
+    {
+      "date": "2026-10-06",
+      "event": "Conflicting operational note issued",
+      "source": "operations-note:p1"
+    },
+    {
+      "date": "2026-10-07",
+      "event": "Field slip records width and no sign-off",
+      "source": "field-slip-photo.jpg:p1"
+    },
+    {
+      "date": "2026-10-28",
+      "event": "Unresolved procurement reference due",
+      "source": "meeting-minutes:p2"
+    },
+    {
+      "date": "2026-10-30",
+      "event": "Unresolved accessibility report/readiness review due",
+      "source": "meeting-minutes:p2"
+    },
+    {
+      "date": "2026-11-03",
+      "event": "Ramp inspection can occur",
+      "source": "circular-v2:p2"
+    },
+    {
+      "date": "2026-11-17",
+      "event": "Staff rehearsal scheduled",
+      "source": "operations-note:p1"
+    },
+    {
+      "date": "2026-11-19",
+      "event": "Revised conditional proposed launch",
+      "source": "circular-v2:p1"
+    }
+  ],
+  "cases": {
+    "related": "A service pilot proposed three counters and a November launch. A newer circular reduces its ceiling and moves launch after accessibility inspection, but an operational note still uses the old plan. Reconstruct the rule changes, dissent, unresolved approvals, and decisions requiring confirmation.",
+    "unrelated": "A harbour lighthouse replacement in 2018 had a certified supplier and signed maritime permit. Find the approved supplier and permit number."
+  },
+  "questions": [
+    {
+      "query": "What is the revised proposed launch for SERAI-47 and why did it change?",
+      "expected": [
+        "19 November 2026",
+        "accessible-ramp inspection",
+        "03 November 2026"
+      ],
+      "sources": [
+        "circular-v2:p1-2"
+      ]
+    },
+    {
+      "query": "Who owns the unresolved accessibility report, and when is it due?",
+      "expected": [
+        "Mira Tan",
+        "30 October 2026",
+        "unresolved"
+      ],
+      "sources": [
+        "meeting-minutes:p2",
+        "circular-v2:p2"
+      ]
+    },
+    {
+      "query": "Who is the approved contractor and what is their procurement approval number?",
+      "expected": [
+        "insufficient evidence"
+      ],
+      "forbidden": [
+        "invented contractor",
+        "invented approval number"
+      ]
+    },
+    {
+      "query": "Does every document agree on the public launch and number of counters?",
+      "expected": [
+        "12 November",
+        "19 November",
+        "three",
+        "two",
+        "conflict",
+        "supersedes"
+      ],
+      "sources": [
+        "circular-v2:p1",
+        "operations-note:p1"
+      ]
+    },
+    {
+      "query": "What width does the field-slip photo record for the west ramp?",
+      "expected": [
+        "112 cm"
+      ],
+      "sources": [
+        "field-slip-photo.jpg:p1"
+      ]
+    }
+  ],
+  "sha256": {
+    "operations-note.txt": "aee954b4fadeb612b84b8731356ac6909d062034a94dda95cc4ccb2b5ae09330",
+    "field-slip-photo.jpg": "dc1d03c57d1e89766982b964e5895514e580d9ea795302699910682886afed44",
+    "operations-note.pdf": "abd77c1ceb403039b34dab152dd4a13e6395202a65037b7c6c5be9718cc03e1a",
+    "meeting-minutes.pdf": "9e182653eae78fb7b220dba3cd97a1fe85b6c099be05b51f5f2e3ac9ef414eea",
+    "field-slip-scanned.pdf": "80973beb8397b530f40588a7a8d4efa89ee0634616ebe66b642895c42104eb23",
+    "circular-v1.txt": "65f7c776885a7ffa99f1666069ec1b2781014c73433352ec50c27c123a18e970",
+    "circular-v2.txt": "1937d8074f2cf48c728e828642230c90753ec51fc0d7ff9f1d147e37a559b72e",
+    "meeting-minutes.txt": "446419bc4045110d6f3c43273e6fea3ae7d885674b3376b1db6975fb298c5da3",
+    "circular-v2.pdf": "c2922da19d22d9f421b6a1eddefec9e20fedb649404d775a36b3a36f4ab7b5e0",
+    "field-slip-photo.txt": "2a6f0ec4ce0f6804cca30631f7d4c9e14ce5325c37520ddef75c45e95a99502c",
+    "circular-v1.pdf": "c7944223a7bf409e3075eda34fe63d0e3b947922830e395e712969a6e75240d1"
+  }
+}
